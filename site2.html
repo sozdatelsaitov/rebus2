@@ -1,0 +1,31 @@
+<!-- Вторая страница: Романтический ребус -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квест: Разгадай ребус</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 10px; }
+    </style>
+    <script>
+        function checkRebus() {
+            var answer = document.getElementById('rebus').value.toLowerCase();
+            if (answer === 'поцелуй') {
+                alert('Молодец! Следующую подсказку ищи в ванной комнате.');
+            } else {
+                alert('Неверно! Попробуй ещё.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Разгадай ребус</h1>
+    <p>💋 + ❤️ = ???</p>
+    <input type="text" id="rebus" placeholder="Введите ответ">
+    <button onclick="checkRebus()">Проверить</button>
+</body>
+</html>
+
+
